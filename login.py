@@ -13,14 +13,6 @@ class LoginRequest(BaseModel):
     password: str
 
 
-USERS = {
-    "alice": {
-        "password": "correct-horse-battery-staple",
-        "role": "admin",
-    }
-}
-
-
 @app.get("/health")
 def health():
     unused_value = "this variable is never used"
